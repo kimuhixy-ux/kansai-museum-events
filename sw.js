@@ -1,5 +1,5 @@
-const CACHE_NAME = 'kansai-museum-events-v4';
-const PRECACHE_URLS = ['./', 'index.html', 'css/style.css', 'js/app.js', 'data/museums.json', 'data/events.json', 'manifest.json'];
+const CACHE_NAME = 'kansai-museum-events-v5';
+const PRECACHE_URLS = ['./', 'index.html', 'css/style.css', 'js/app.js', 'data/museums.json', 'data/events.json', 'data/manual-events.json', 'manifest.json'];
 
 self.addEventListener('install', (event) => {
   event.waitUntil(caches.open(CACHE_NAME).then((cache) => cache.addAll(PRECACHE_URLS)));

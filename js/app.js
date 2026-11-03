@@ -123,7 +123,15 @@ function createEventCard(event) {
   if (isSafeUrl(event.url)) {
     actions.append(createLink('button', '公式ページ', event.url, `${event.title}の公式ページ`));
   }
-  card.append(kind, title, period, place, actions);
+  card.append(kind, title, period, place);
+  // 手入力分は公式の変更に自動で追従しないので、いつ確認した情報かを見せる
+  if (event.checkedAt) {
+    const checked = document.createElement('p');
+    checked.className = 'event-meta';
+    checked.textContent = `手入力の情報（${formatDate(event.checkedAt, false)}確認）`;
+    card.append(checked);
+  }
+  card.append(actions);
   return card;
 }
 
@@ -183,9 +191,15 @@ async function init() {
     renderEvents();
   });
   try {
-    const [museums, data] = await Promise.all([fetchJson('data/museums.json'), fetchJson('data/events.json')]);
+    const [museums, data, manualEvents] = await Promise.all([
+      fetchJson('data/museums.json'),
+      fetchJson('data/events.json'),
+      // 手入力分は補助なので、読めなくても自動取得分の表示は止めない
+      fetchJson('data/manual-events.json').catch(() => []),
+    ]);
     state.museums = new Map(museums.map((museum) => [museum.id, museum]));
-    state.events = data.events;
+    state.events = [...data.events, ...manualEvents]
+      .sort((a, b) => a.start.localeCompare(b.start) || a.title.localeCompare(b.title));
     renderEvents();
     renderManualMuseums(museums, data.statuses);
     document.getElementById('updated').textContent = `情報の更新日: ${formatDate(data.updatedAt, true)}`;

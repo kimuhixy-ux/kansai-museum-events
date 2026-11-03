@@ -66,7 +66,7 @@
    "errors": []
   },
   "naramuseum": {
-   "count": 0,
+   "count": 6,
    "errors": []
   },
   "miho": {
@@ -217,6 +217,24 @@
    "start": "2026-09-19",
    "end": "2026-11-08",
    "url": "https://www.minpaku.ac.jp/ai1ec_event/73981"
+  },
+  {
+   "id": "https://www.pref.nara.lg.jp/n044/p105025.html@2026-09-19",
+   "title": "昭和100年企画「新収蔵記念/生誕140年 富本憲吉と昭和」",
+   "kind": "exhibition",
+   "museumId": "naramuseum",
+   "start": "2026-09-19",
+   "end": "2026-11-15",
+   "url": "https://www.pref.nara.lg.jp/n044/p105025.html"
+  },
+  {
+   "id": "https://www.pref.nara.lg.jp/n044/p105026.html@2026-09-19",
+   "title": "特別展「時代を越えて~日本画のゆくえ 特集展示:近代奈良の日本画家 庄田鶴友と植中直斎」",
+   "kind": "exhibition",
+   "museumId": "naramuseum",
+   "start": "2026-09-19",
+   "end": "2026-11-15",
+   "url": "https://www.pref.nara.lg.jp/n044/p105026.html"
   },
   {
    "id": "https://kyotocity-kyocera.museum/exhibition/20260919-20261220@2026-09-19",
@@ -1095,6 +1113,33 @@
    "endTime": "15:00"
   },
   {
+   "id": "https://www.pref.nara.lg.jp/n044/p105074.html@2027-01-16",
+   "title": "コレクション企画「素材と表現 ―墨と和紙が生んだかたち」",
+   "kind": "exhibition",
+   "museumId": "naramuseum",
+   "start": "2027-01-16",
+   "end": "2027-03-14",
+   "url": "https://www.pref.nara.lg.jp/n044/p105074.html"
+  },
+  {
+   "id": "https://www.pref.nara.lg.jp/n044/p105073.html@2027-01-16",
+   "title": "奈良ゆかりの現代作家展05 夛山祐子「日常収集録」",
+   "kind": "exhibition",
+   "museumId": "naramuseum",
+   "start": "2027-01-16",
+   "end": "2027-02-14",
+   "url": "https://www.pref.nara.lg.jp/n044/p105073.html"
+  },
+  {
+   "id": "https://www.pref.nara.lg.jp/n044/p105072.html@2027-01-16",
+   "title": "特別展「現代美術における墨表現 ―墨と和紙の世界:町田久美・浅見貴子・新恵美佐子・荒井恵子」",
+   "kind": "exhibition",
+   "museumId": "naramuseum",
+   "start": "2027-01-16",
+   "end": "2027-03-14",
+   "url": "https://www.pref.nara.lg.jp/n044/p105072.html"
+  },
+  {
    "id": "https://www.minpaku.ac.jp/ai1ec_event/75842@2027-01-18",
    "title": "鳥と日本列島の文化――特別展「鳥」の準備状況その1",
    "kind": "event",
@@ -1162,6 +1207,15 @@
    "url": "https://www.minpaku.ac.jp/ai1ec_event/75862",
    "startTime": "14:30",
    "endTime": "15:15"
+  },
+  {
+   "id": "https://www.pref.nara.lg.jp/n044/p105073.html@2027-02-16",
+   "title": "奈良ゆかりの現代作家展06 植田陽貴「遠い水音、触れる火」",
+   "kind": "exhibition",
+   "museumId": "naramuseum",
+   "start": "2027-02-16",
+   "end": "2027-03-14",
+   "url": "https://www.pref.nara.lg.jp/n044/p105073.html"
   },
   {
    "id": "https://www.minpaku.ac.jp/ai1ec_event/72963@2027-02-20",

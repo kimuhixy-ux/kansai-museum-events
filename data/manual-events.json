@@ -1,0 +1,20 @@
+[
+ {"title": "寛永行幸四百年祭開催記念 特別展「寛永 太平がはぐくむ美」", "kind": "exhibition", "museumId": "bunpaku", "start": "2026-09-19", "end": "2026-11-15", "url": "https://www.bunpaku.or.jp/", "checkedAt": "2026-11-03"},
+ {"title": "総合展示「田能村直入と近代京都の南画ー自然のアンビエンス」", "kind": "exhibition", "museumId": "bunpaku", "start": "2026-10-03", "end": "2026-11-29", "url": "https://www.bunpaku.or.jp/", "checkedAt": "2026-11-03"},
+ {"title": "特別展「国立美術館コレクション・ダイアローグ 松方幸次郎×山村德太郎 蒐集のパッション―ロダンを日本へ、具体を世界へ」", "kind": "exhibition", "museumId": "hyogo", "start": "2026-10-10", "end": "2026-12-27", "url": "https://www.artm.pref.hyogo.jp/exhibition/t_2610/index.html", "checkedAt": "2026-11-03"},
+ {"title": "コレクション展Ⅱ「前衛って何だ!?」「美術の中のかたち―手で見る造形 青木野枝 動体」", "kind": "exhibition", "museumId": "hyogo", "start": "2026-10-20", "end": "2027-02-23", "url": "https://www.artm.pref.hyogo.jp/exhibition/j_2610/index.html", "checkedAt": "2026-11-03"},
+ {"title": "第63回 2026県展", "kind": "exhibition", "museumId": "hyogo", "start": "2026-10-31", "end": "2026-11-14", "url": "https://www.artm.pref.hyogo.jp/kenten/y2026_kenten/index.html", "checkedAt": "2026-11-03"},
+ {"title": "特別展「トーベとムーミン展～とっておきのものを探しに～」", "kind": "exhibition", "museumId": "kobecity", "start": "2026-10-10", "end": "2026-12-13", "url": "https://www.ktv.jp/event/tove_moomins/", "checkedAt": "2026-11-03"},
+ {"title": "コレクション展示「大水害の時代―明治29年水害と神戸」", "kind": "exhibition", "museumId": "kobecity", "start": "2026-10-10", "end": "2026-12-13", "url": "https://event.city.kobe.lg.jp/event/pqG4f6USc3uVnKJNfAnx", "checkedAt": "2026-11-03"},
+ {"title": "神戸市立博物館講座「学芸員とコレクションに親しむ」（午前の部）", "kind": "event", "museumId": "kobecity", "start": "2026-11-28", "end": "2026-11-28", "startTime": "10:00", "endTime": "11:30", "url": "https://event.city.kobe.lg.jp/event/pqG4f6USc3uVnKJNfAnx", "checkedAt": "2026-11-03"},
+ {"title": "神戸市立博物館講座「学芸員とコレクションに親しむ」（午後の部）", "kind": "event", "museumId": "kobecity", "start": "2026-11-28", "end": "2026-11-28", "startTime": "14:00", "endTime": "15:30", "url": "https://event.city.kobe.lg.jp/event/pqG4f6USc3uVnKJNfAnx", "checkedAt": "2026-11-03"},
+ {"title": "特別展「大ゴッホ展 アルルの跳ね橋」", "kind": "exhibition", "museumId": "kobecity", "start": "2027-02-06", "end": "2027-05-30", "url": "https://www.ktv.jp/event/vangogh/", "checkedAt": "2026-11-03"},
+ {"title": "第78回 正倉院展", "kind": "exhibition", "museumId": "narahaku", "start": "2026-10-24", "end": "2026-11-09", "url": "https://www.narahaku.go.jp/exhibition/special/special_exhibition/202610_shosoin/", "checkedAt": "2026-11-03"},
+ {"title": "特別陳列「春日若宮おん祭の信仰と美術」", "kind": "exhibition", "museumId": "narahaku", "start": "2026-12-12", "end": "2027-01-17", "url": "https://www.narahaku.go.jp/exhibition/special/feature_exhibition/202612_on-matsuri/", "checkedAt": "2026-11-03"},
+ {"title": "名品展「珠玉の仏教美術」", "kind": "exhibition", "museumId": "narahaku", "start": "2026-12-12", "end": "2027-03-14", "url": "https://www.narahaku.go.jp/exhibition/usual/bukkyo/", "checkedAt": "2026-11-03"},
+ {"title": "特集展示「新たに修理された文化財」", "kind": "exhibition", "museumId": "narahaku", "start": "2026-12-22", "end": "2027-01-17", "url": "https://www.narahaku.go.jp/exhibition/special/thematic_exhibition/202612_shuri/", "checkedAt": "2026-11-03"},
+ {"title": "特別陳列「お水取り」", "kind": "exhibition", "museumId": "narahaku", "start": "2027-02-06", "end": "2027-03-14", "url": "https://www.narahaku.go.jp/exhibition/special/feature_exhibition/202702_omizutori/", "checkedAt": "2026-11-03"},
+ {"title": "修理完成記念 特別公開 櫻本坊聖天堂 秘仏本尊 十一面観音立像", "kind": "exhibition", "museumId": "narahaku", "start": "2027-02-06", "end": "2027-03-14", "url": "https://www.narahaku.go.jp/exhibition/usual/202702_sakuramotobou/", "checkedAt": "2026-11-03"},
+ {"title": "奈良市・サマルカンド市姉妹都市提携5周年記念特別展 奇跡の壁画とシルクロードの至宝", "kind": "exhibition", "museumId": "narahaku", "start": "2027-07-10", "end": "2027-09-05", "url": "https://www.narahaku.go.jp/exhibition/special/special_exhibition/202707_samarukando/", "checkedAt": "2026-11-03"},
+ {"title": "第77回奈良県美術展覧会", "kind": "exhibition", "museumId": "naramuseum", "start": "2026-12-12", "end": "2026-12-20", "url": "https://www.pref.nara.lg.jp/n034/69257.html", "checkedAt": "2026-11-03"}
+]
