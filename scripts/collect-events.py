@@ -5,6 +5,7 @@ import datetime as dt
 import json
 import pathlib
 import re
+import ssl
 import sys
 import time
 import unicodedata
@@ -232,13 +233,23 @@ def extract_events(html, final_url, page, museum, today):
     return events
 
 
+def build_ssl_context():
+    # 民博のサーバーは途中の証明書を送らず、Linux では検証に失敗する。検証は止めず、不足分だけ補う
+    context = ssl.create_default_context()
+    context.load_verify_locations(pathlib.Path(__file__).with_name('extra-ca-certs.pem'))
+    return context
+
+
+SSL_CONTEXT = build_ssl_context()
+
+
 def fetch(url, robots_cache):
     origin = '{0.scheme}://{0.netloc}'.format(urllib.parse.urlsplit(url))
     if origin not in robots_cache:
         parser = urllib.robotparser.RobotFileParser()
         try:
             request = urllib.request.Request(origin + '/robots.txt', headers={'User-Agent': USER_AGENT})
-            with urllib.request.urlopen(request, timeout=30) as response:
+            with urllib.request.urlopen(request, timeout=30, context=SSL_CONTEXT) as response:
                 parser.parse(response.read().decode('utf-8', 'ignore').splitlines())
         except urllib.error.HTTPError as error:
             # 404はルールなしだが、それ以外の失敗は「許可」と見なさない
@@ -248,7 +259,7 @@ def fetch(url, robots_cache):
     if not robots_cache[origin].can_fetch(USER_AGENT, url):
         raise PermissionError(f'robots.txt で禁止: {url}')
     request = urllib.request.Request(url, headers={'User-Agent': USER_AGENT})
-    with urllib.request.urlopen(request, timeout=30) as response:
+    with urllib.request.urlopen(request, timeout=30, context=SSL_CONTEXT) as response:
         charset = response.headers.get_content_charset() or 'utf-8'
         return response.read().decode(charset, 'ignore'), response.geturl()
 
