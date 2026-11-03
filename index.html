@@ -15,6 +15,11 @@
   <header class="site-header">
     <h1>関西ミュージアム予定</h1>
     <input id="search" class="search" type="search" placeholder="展覧会名・館名で検索" aria-label="展覧会名・館名で検索">
+    <div class="date-filter">
+      <label for="date-input">日付</label>
+      <input id="date-input" class="date-input" type="date">
+      <button id="date-clear" class="date-clear" type="button" hidden>解除</button>
+    </div>
     <div class="filters">
       <div id="period-filter" class="chips" role="group" aria-label="時期"></div>
       <div id="kind-filter" class="chips" role="group" aria-label="種類"></div>

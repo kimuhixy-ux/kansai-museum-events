@@ -54,6 +54,44 @@ h1 { margin: 0 0 8px; font-size: 1.2rem; }
   font-size: 16px;
 }
 
+/* iOS Safari の日付欄は標準の見た目のままだと幅からはみ出すことがある */
+.date-filter {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 8px;
+  font-size: 0.9rem;
+}
+
+.date-input {
+  flex: 1;
+  min-width: 0;
+  min-height: 44px;
+  padding: 8px 12px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface);
+  color: var(--text);
+  font-size: 16px;
+  text-align: left;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.date-clear {
+  flex: none;
+  min-width: 44px;
+  min-height: 44px;
+  padding: 0 14px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface);
+  color: var(--text);
+  font-size: 0.9rem;
+}
+
+.date-clear[hidden], .chips[hidden] { display: none; }
+
 .filters { margin-top: 8px; }
 
 .chips {

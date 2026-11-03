@@ -4,7 +4,7 @@ const AREA_OPTIONS = ['すべて', '大阪', '京都', '兵庫', '奈良', '滋�
 const WEEKDAYS = ['日', '月', '火', '水', '木', '金', '土'];
 const CALENDAR_BASE_URL = 'https://calendar.google.com/calendar/render';
 
-const state = { events: [], museums: new Map(), period: 'all', kind: 'all', area: 'すべて', query: '' };
+const state = { events: [], museums: new Map(), period: 'all', kind: 'all', area: 'すべて', query: '', date: '' };
 
 // toISOString は UTC になり、日本の午前中に日付が1日ずれるため手で組み立てる
 function todayIso() {
@@ -79,8 +79,13 @@ function matchesFilters(event, today) {
   if (!museum || event.end < today) return false;
   if (state.kind !== 'all' && event.kind !== state.kind) return false;
   if (state.area !== 'すべて' && museum.area !== state.area) return false;
-  if (state.period === 'ongoing' && event.start > today) return false;
-  if (state.period === 'upcoming' && event.start <= today) return false;
+  if (state.date) {
+    // 長い会期の途中の日でも見に行けるので、開始日の一致ではなく会期に含まれるかで見る
+    if (event.start > state.date || event.end < state.date) return false;
+  } else {
+    if (state.period === 'ongoing' && event.start > today) return false;
+    if (state.period === 'upcoming' && event.start <= today) return false;
+  }
   const haystack = `${event.title} ${museum.name}`.toLowerCase();
   return haystack.includes(state.query);
 }
@@ -139,9 +144,33 @@ function renderEvents() {
   const today = todayIso();
   const visible = state.events.filter((event) => matchesFilters(event, today));
   document.getElementById('event-list').replaceChildren(...visible.map(createEventCard));
-  document.getElementById('summary').textContent = visible.length
-    ? `${visible.length}件`
-    : '条件に合う催しはありません。';
+  document.getElementById('summary').textContent = summaryText(visible.length);
+}
+
+function summaryText(count) {
+  if (!state.date) return count ? `${count}件` : '条件に合う催しはありません。';
+  const dateText = formatDate(state.date, true);
+  if (!count) return `${dateText}に開催中の催しはありません。`;
+  // 休館日のデータは持っておらず、会期中でも閉まっている日があるため断っておく
+  return `${dateText}に開催中: ${count}件（休館日は公式ページでご確認ください）`;
+}
+
+function initDateFilter() {
+  const input = document.getElementById('date-input');
+  const clearButton = document.getElementById('date-clear');
+  const applyDate = () => {
+    state.date = input.value;
+    clearButton.hidden = !state.date;
+    // 「開催中／これから」は今日が基準で、選んだ日付と食い違うため隠す
+    document.getElementById('period-filter').hidden = Boolean(state.date);
+    renderEvents();
+  };
+  input.min = todayIso();
+  input.addEventListener('change', applyDate);
+  clearButton.addEventListener('click', () => {
+    input.value = '';
+    applyDate();
+  });
 }
 
 function renderChips(containerId, options, stateKey) {
@@ -183,6 +212,7 @@ async function fetchJson(path) {
 }
 
 async function init() {
+  initDateFilter();
   renderChips('period-filter', PERIOD_OPTIONS, 'period');
   renderChips('kind-filter', KIND_OPTIONS, 'kind');
   renderChips('area-filter', AREA_OPTIONS.map((area) => [area, area]), 'area');
