@@ -19,10 +19,7 @@
   },
   "minpaku": {
    "count": 36,
-   "errors": [
-    "https://www.minpaku.ac.jp/exhibition: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)>",
-    "https://www.minpaku.ac.jp/event: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)>"
-   ]
+   "errors": []
   },
   "aham": {
    "count": 5,
