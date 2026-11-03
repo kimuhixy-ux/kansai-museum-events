@@ -1,0 +1,138 @@
+:root {
+  color-scheme: light dark;
+  --bg: #f6f4ef;
+  --surface: #ffffff;
+  --text: #22211e;
+  --muted: #68655e;
+  --line: #dcd8cf;
+  --accent: #1f5f8b;
+  --on-accent: #ffffff;
+  --event: #8a4b12;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #191a1c;
+    --surface: #25272a;
+    --text: #eeece7;
+    --muted: #aeaba4;
+    --line: #3b3d41;
+    --accent: #7fbde6;
+    --on-accent: #10242f;
+    --event: #e6ae78;
+  }
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, 'Hiragino Sans', sans-serif;
+  line-height: 1.5;
+  -webkit-text-size-adjust: 100%;
+}
+
+.site-header {
+  padding: calc(env(safe-area-inset-top) + 12px) calc(env(safe-area-inset-right) + 16px) 10px calc(env(safe-area-inset-left) + 16px);
+  background: var(--bg);
+  border-bottom: 1px solid var(--line);
+}
+
+h1 { margin: 0 0 8px; font-size: 1.2rem; }
+
+/* iOS Safari は16px未満の入力欄でフォーカス時に拡大してしまう */
+.search {
+  width: 100%;
+  min-height: 44px;
+  padding: 8px 12px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface);
+  color: var(--text);
+  font-size: 16px;
+}
+
+.filters { margin-top: 8px; }
+
+.chips {
+  display: flex;
+  gap: 6px;
+  padding-bottom: 6px;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.chip {
+  flex: none;
+  min-width: 44px;
+  min-height: 44px;
+  padding: 0 14px;
+  border: 1px solid var(--line);
+  border-radius: 22px;
+  background: var(--surface);
+  color: var(--text);
+  font-size: 0.9rem;
+}
+
+.chip[aria-pressed='true'] {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: var(--on-accent);
+  font-weight: 600;
+}
+
+main {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 12px calc(env(safe-area-inset-right) + 16px) calc(env(safe-area-inset-bottom) + 32px) calc(env(safe-area-inset-left) + 16px);
+}
+
+.summary { margin: 0 0 10px; color: var(--muted); font-size: 0.9rem; }
+
+.event-list, .manual-list { margin: 0; padding: 0; list-style: none; }
+
+.event-card {
+  margin-bottom: 10px;
+  padding: 14px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: var(--surface);
+}
+
+.event-kind { font-size: 0.78rem; font-weight: 700; color: var(--accent); }
+.event-kind.is-event { color: var(--event); }
+.event-title { margin: 2px 0 6px; font-size: 1.02rem; overflow-wrap: anywhere; }
+.event-meta { margin: 0; color: var(--muted); font-size: 0.88rem; }
+
+.event-actions { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 12px; }
+
+.button {
+  display: inline-flex;
+  flex: 1 1 140px;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  padding: 8px 12px;
+  border: 1px solid var(--accent);
+  border-radius: 8px;
+  color: var(--accent);
+  font-size: 0.92rem;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+}
+
+.button.primary { background: var(--accent); color: var(--on-accent); }
+
+.manual-section { margin-top: 28px; }
+.manual-section h2 { margin: 0 0 4px; font-size: 1rem; }
+.manual-list a {
+  display: flex;
+  align-items: center;
+  min-height: 44px;
+  border-bottom: 1px solid var(--line);
+  color: var(--accent);
+}
+.note { color: var(--muted); font-size: 0.82rem; }

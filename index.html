@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>関西ミュージアム予定</title>
+  <meta name="description" content="関西の美術館・博物館の展覧会とイベントを一覧し、Googleカレンダーに追加できるアプリ">
+  <meta name="theme-color" content="#f6f4ef" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#191a1c" media="(prefers-color-scheme: dark)">
+  <link rel="manifest" href="manifest.json">
+  <link rel="apple-touch-icon" href="icons/icon-180.png">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <h1>関西ミュージアム予定</h1>
+    <input id="search" class="search" type="search" placeholder="展覧会名・館名で検索" aria-label="展覧会名・館名で検索">
+    <div class="filters">
+      <div id="period-filter" class="chips" role="group" aria-label="時期"></div>
+      <div id="kind-filter" class="chips" role="group" aria-label="種類"></div>
+      <div id="area-filter" class="chips" role="group" aria-label="地域"></div>
+    </div>
+  </header>
+  <main>
+    <p id="summary" class="summary" aria-live="polite">読み込み中…</p>
+    <ul id="event-list" class="event-list"></ul>
+    <section id="manual-section" class="manual-section" hidden>
+      <h2>公式サイトで確認が必要な館</h2>
+      <p class="note">今回は自動で取得できなかった館です。</p>
+      <ul id="manual-list" class="manual-list"></ul>
+    </section>
+    <p id="updated" class="note"></p>
+  </main>
+  <script src="js/app.js"></script>
+</body>
+</html>
