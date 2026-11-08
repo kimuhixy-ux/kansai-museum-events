@@ -1,8 +1,8 @@
 {
- "updatedAt": "2026-11-03",
+ "updatedAt": "2026-11-08",
  "statuses": {
   "nmao": {
-   "count": 9,
+   "count": 5,
    "errors": []
   },
   "nakka": {
@@ -18,7 +18,7 @@
    "errors": []
   },
   "minpaku": {
-   "count": 36,
+   "count": 33,
    "errors": []
   },
   "aham": {
@@ -26,7 +26,7 @@
    "errors": []
   },
   "kyohaku": {
-   "count": 11,
+   "count": 10,
    "errors": []
   },
   "momak": {
@@ -74,7 +74,7 @@
    "errors": []
   },
   "shiga": {
-   "count": 13,
+   "count": 10,
    "errors": []
   },
   "momaw": {
@@ -109,24 +109,6 @@
    "start": "2026-05-30",
    "end": "2027-03-28",
    "url": "https://www.momaw.jp/exhibit/architecture_design/"
-  },
-  {
-   "id": "https://www.nmao.go.jp/events/event/collection20260719/@2026-07-19",
-   "title": "コレクション展 開館50周年記念プレ企画 コレクション1:私/行為",
-   "kind": "exhibition",
-   "museumId": "nmao",
-   "start": "2026-07-19",
-   "end": "2026-11-03",
-   "url": "https://www.nmao.go.jp/events/event/collection20260719/"
-  },
-  {
-   "id": "https://www.nmao.go.jp/events/event/20260719_sasamoto-aki/@2026-07-19",
-   "title": "特別展 笹本晃 ラボラトリー",
-   "kind": "exhibition",
-   "museumId": "nmao",
-   "start": "2026-07-19",
-   "end": "2026-11-03",
-   "url": "https://www.nmao.go.jp/events/event/20260719_sasamoto-aki/"
   },
   {
    "id": "https://www.momaw.jp/exhibit/2026col_painting_sculpture/@2026-08-04",
@@ -208,15 +190,6 @@
    "start": "2026-09-15",
    "end": "2026-11-08",
    "url": "https://bbpmuseum.jp/exhibition/%e4%b8%8a%e5%89%8d%e6%99%ba%e7%a5%90%e3%81%ae%e8%87%aa%e7%94%bb%e9%81%93-2"
-  },
-  {
-   "id": "https://www.minpaku.ac.jp/ai1ec_event/73981@2026-09-19",
-   "title": "【館外開催】巡回展「令和8年度秋季特別展 国立民族学博物館コレクション 世界のかわいい衣装」【石川県立歴史博物館】",
-   "kind": "exhibition",
-   "museumId": "minpaku",
-   "start": "2026-09-19",
-   "end": "2026-11-08",
-   "url": "https://www.minpaku.ac.jp/ai1ec_event/73981"
   },
   {
    "id": "https://www.pref.nara.lg.jp/n044/p105025.html@2026-09-19",
@@ -399,33 +372,6 @@
    "url": "https://nakka-art.jp/event-post/nichibiten50-20261010-20270105/"
   },
   {
-   "id": "https://www.nmao.go.jp/events/event/colle-naka_stamps/@2026-10-10",
-   "title": "コレナカ 国立国際美術館⇄大阪中之島美術館 スタンプラリー",
-   "kind": "event",
-   "museumId": "nmao",
-   "start": "2026-10-10",
-   "end": "2026-11-03",
-   "url": "https://www.nmao.go.jp/events/event/colle-naka_stamps/"
-  },
-  {
-   "id": "https://nakka-art.jp/exhibition-post/colle-naka-2026/@2026-10-10",
-   "title": "国立国際美術館(NMAO)× 大阪中之島美術館(NAKKA)コレクション活用連携事業 コレナカ NMAOサテライト",
-   "kind": "exhibition",
-   "museumId": "nakka",
-   "start": "2026-10-10",
-   "end": "2026-11-07",
-   "url": "https://nakka-art.jp/exhibition-post/colle-naka-2026/"
-  },
-  {
-   "id": "https://www.nmao.go.jp/events/event/20261010_nmao-satellite/@2026-10-10",
-   "title": "展覧会 国立国際美術館(NMAO)×大阪中之島美術館(NAKKA)コレクション活用連携事業 コレナカ NMAOサテライト",
-   "kind": "exhibition",
-   "museumId": "nmao",
-   "start": "2026-10-10",
-   "end": "2026-11-07",
-   "url": "https://www.nmao.go.jp/events/event/20261010_nmao-satellite/"
-  },
-  {
    "id": "https://www.momaw.jp/exhibit/2026suzuki/@2026-10-14",
    "title": "鈴木崇 もののをかし",
    "kind": "exhibition",
@@ -462,91 +408,6 @@
    "url": "https://nakka-art.jp/exhibition-post/daiei-ten2026/"
   },
   {
-   "id": "https://www.minpaku.ac.jp/ai1ec_event/75998@2026-11-03",
-   "title": "「陽気な墓」で想い出を残そう2026",
-   "kind": "event",
-   "museumId": "minpaku",
-   "start": "2026-11-03",
-   "end": "2026-11-03",
-   "url": "https://www.minpaku.ac.jp/ai1ec_event/75998",
-   "startTime": "11:30",
-   "endTime": "15:30"
-  },
-  {
-   "id": "https://www.nmao.go.jp/events/event/symposium_20261103/@2026-11-03",
-   "title": "コレナカ 記念シンポジウム「美術館とコレクション――集めること、残すこと、ひらくこと」",
-   "kind": "event",
-   "museumId": "nmao",
-   "start": "2026-11-03",
-   "end": "2026-11-03",
-   "url": "https://www.nmao.go.jp/events/event/symposium_20261103/"
-  },
-  {
-   "id": "https://www.minpaku.ac.jp/ai1ec_event/75083@2026-11-03",
-   "title": "公開フォーラム「世界の博物館2026」",
-   "kind": "event",
-   "museumId": "minpaku",
-   "start": "2026-11-03",
-   "end": "2026-11-03",
-   "url": "https://www.minpaku.ac.jp/ai1ec_event/75083",
-   "startTime": "10:30",
-   "endTime": "16:00"
-  },
-  {
-   "id": "https://www.shigamuseum.jp/events/14639/@2026-11-03",
-   "title": "展示関連イベント 【国立印刷局との連携イベント】デザイン定規を使って彩紋を作ろう!",
-   "kind": "event",
-   "museumId": "shiga",
-   "start": "2026-11-03",
-   "end": "2026-11-03",
-   "url": "https://www.shigamuseum.jp/events/14639/"
-  },
-  {
-   "id": "https://www.shigamuseum.jp/events/14641/@2026-11-03",
-   "title": "展示関連イベント 【国立印刷局との連携イベント】工芸官の技を見てみよう!",
-   "kind": "event",
-   "museumId": "shiga",
-   "start": "2026-11-03",
-   "end": "2026-11-03",
-   "url": "https://www.shigamuseum.jp/events/14641/"
-  },
-  {
-   "id": "https://www.shigamuseum.jp/events/14556/@2026-11-03",
-   "title": "展示関連イベント 【国立印刷局との連携イベント】自分だけの”お札風”コラージュを作ろう!",
-   "kind": "event",
-   "museumId": "shiga",
-   "start": "2026-11-03",
-   "end": "2026-11-03",
-   "url": "https://www.shigamuseum.jp/events/14556/"
-  },
-  {
-   "id": "https://www.shigamuseum.jp/events/14898/@2026-11-03",
-   "title": "展覧会関連イベント 「丸木スマ展 73歳からのアーティスト」関連イベント 平和堂財団芸術奨励賞受賞者によるミュージアム・コンサート",
-   "kind": "event",
-   "museumId": "shiga",
-   "start": "2026-11-03",
-   "end": "2026-11-03",
-   "url": "https://www.shigamuseum.jp/events/14898/"
-  },
-  {
-   "id": "https://nakka-art.jp/event-post/colle-naka-2026/@2026-11-03",
-   "title": "講演会 国立国際美術館(NMAO)× 大阪中之島美術館(NAKKA)コレクション活用連携事業 コレナカ 関連イベント コレナカ 記念シンポジウム「美術館とコレクション――集めること、残すこと、ひらくこと」",
-   "kind": "event",
-   "museumId": "nakka",
-   "start": "2026-11-03",
-   "end": "2026-11-03",
-   "url": "https://nakka-art.jp/event-post/colle-naka-2026/"
-  },
-  {
-   "id": "https://www.osakamushis.jp/news/2026/kantyo_kouenkai_3.html@2026-11-03",
-   "title": "開館25周年記念座談会「―歴代館長が語る― 大阪歴史博物館のあゆみ、そして未来へ」",
-   "kind": "event",
-   "museumId": "osakamushis",
-   "start": "2026-11-03",
-   "end": "2026-11-03",
-   "url": "https://www.osakamushis.jp/news/2026/kantyo_kouenkai_3.html"
-  },
-  {
    "id": "https://www.minpaku.ac.jp/ai1ec_event/76457@2026-11-05",
    "title": "みんなみんな『月刊みんぱく』参加型パネルとトークイベント",
    "kind": "event",
@@ -556,35 +417,13 @@
    "url": "https://www.minpaku.ac.jp/ai1ec_event/76457"
   },
   {
-   "id": "https://www.minpaku.ac.jp/ai1ec_event/72582@2026-11-06",
-   "title": "【館外開催】みんぱく公開講演会「暴力が生まれるとき――東南アジアのフィールドから」",
+   "id": "https://www.nmao.go.jp/events/event/20261010_nmao-satellite/@2026-11-08",
+   "title": "お知らせ 「コレナカ NMAOサテライト」開催中( まで)",
    "kind": "event",
-   "museumId": "minpaku",
-   "start": "2026-11-06",
-   "end": "2026-11-06",
-   "url": "https://www.minpaku.ac.jp/ai1ec_event/72582",
-   "startTime": "18:30",
-   "endTime": "20:40"
-  },
-  {
-   "id": "https://www.minpaku.ac.jp/ai1ec_event/76134@2026-11-07",
-   "title": "【館外開催】国際学術講演会『古代アンデスのイメージ世界―石彫・人面表象・地上絵から読み解く社会と宗教』",
-   "kind": "event",
-   "museumId": "minpaku",
-   "start": "2026-11-07",
-   "end": "2026-11-07",
-   "url": "https://www.minpaku.ac.jp/ai1ec_event/76134",
-   "startTime": "13:30",
-   "endTime": "16:30"
-  },
-  {
-   "id": "https://www.kyohaku.go.jp/jp/events/assets/concert/20261108_joint.pdf@2026-11-08",
-   "title": "コンサート ヒジヤミュージッククラブ",
-   "kind": "event",
-   "museumId": "kyohaku",
+   "museumId": "nmao",
    "start": "2026-11-08",
    "end": "2026-11-08",
-   "url": "https://www.kyohaku.go.jp/jp/events/assets/concert/20261108_joint.pdf"
+   "url": "https://www.nmao.go.jp/events/event/20261010_nmao-satellite/"
   },
   {
    "id": "https://www.minpaku.ac.jp/ai1ec_event/73364@2026-11-09",
@@ -774,6 +613,15 @@
    "url": "https://nakka-art.jp/event-post/daiei-20261127/"
   },
   {
+   "id": "https://www.minpaku.ac.jp/ai1ec_event/76496@2026-11-28",
+   "title": "アーカイブズが拓く人類学史の展望",
+   "kind": "event",
+   "museumId": "minpaku",
+   "start": "2026-11-28",
+   "end": "2026-11-29",
+   "url": "https://www.minpaku.ac.jp/ai1ec_event/76496"
+  },
+  {
    "id": "https://www.minpaku.ac.jp/ai1ec_event/75401@2026-11-28",
    "title": "沙流川流域に伝わるアイヌ民族の舞踊と口承文芸",
    "kind": "event",
@@ -890,6 +738,15 @@
    "url": "https://www.shigamuseum.jp/exhibitions/14900/"
   },
   {
+   "id": "https://nakka-art.jp/event-post/daiei-20261211/@2026-12-11",
+   "title": "ギャラリートーク 大英博物館日本美術コレクション 百花繚乱〜海を越えた江戸絵画 関連イベント 学芸員によるギャラリートーク",
+   "kind": "event",
+   "museumId": "nakka",
+   "start": "2026-12-11",
+   "end": "2026-12-11",
+   "url": "https://nakka-art.jp/event-post/daiei-20261211/"
+  },
+  {
    "id": "https://www.minpaku.ac.jp/ai1ec_event/73325@2026-12-12",
    "title": "みんぱく映画会「民族文化映像研究所と萱野茂――初期作品を振り返る」",
    "kind": "event",
@@ -941,6 +798,15 @@
    "url": "https://kyotocity-kyocera.museum/exhibition/20261217-20270111"
   },
   {
+   "id": "https://nakka-art.jp/event-post/daiei-20261218/@2026-12-18",
+   "title": "ギャラリートーク 大英博物館日本美術コレクション 百花繚乱〜海を越えた江戸絵画 関連イベント 学芸員によるギャラリートーク",
+   "kind": "event",
+   "museumId": "nakka",
+   "start": "2026-12-18",
+   "end": "2026-12-18",
+   "url": "https://nakka-art.jp/event-post/daiei-20261218/"
+  },
+  {
    "id": "https://nakka-art.jp/exhibition-post/osaka-directory-dir14/@2026-12-19",
    "title": "Osaka Directory 14 Supported by RICHARD MILLE 迫 鉄平",
    "kind": "exhibition",
@@ -966,6 +832,17 @@
    "start": "2026-12-19",
    "end": "2026-12-19",
    "url": "https://www.momak.go.jp/Japanese/exhibition468_event03.html"
+  },
+  {
+   "id": "https://www.minpaku.ac.jp/ai1ec_event/76552@2026-12-19",
+   "title": "フィールド写真の価値を高める デジタルアーカイブの実践的活用",
+   "kind": "event",
+   "museumId": "minpaku",
+   "start": "2026-12-19",
+   "end": "2026-12-19",
+   "url": "https://www.minpaku.ac.jp/ai1ec_event/76552",
+   "startTime": "13:00",
+   "endTime": "17:00"
   },
   {
    "id": "https://www.minpaku.ac.jp/ai1ec_event/72961@2026-12-19",
@@ -1160,6 +1037,15 @@
    "url": "https://nakka-art.jp/exhibition-post/osaka-directory-dir15/"
   },
   {
+   "id": "https://www.osakamushis.jp/news/2026/rekihakukoza2026_5.html@2027-01-23",
+   "title": "なにわ歴博講座なにわ歴博講座「『藪明山』とは何者か? ―キーワードで読み解く明山の海外戦略―」",
+   "kind": "event",
+   "museumId": "osakamushis",
+   "start": "2027-01-23",
+   "end": "2027-01-23",
+   "url": "https://www.osakamushis.jp/news/2026/rekihakukoza2026_5.html"
+  },
+  {
    "id": "https://www.minpaku.ac.jp/ai1ec_event/76165@2027-01-31",
    "title": "みんぱくワールドシネマ「お坊さまと鉄砲」",
    "kind": "event",
@@ -1296,6 +1182,15 @@
    "url": "https://www.minpaku.ac.jp/ai1ec_event/72964",
    "startTime": "13:30",
    "endTime": "15:00"
+  },
+  {
+   "id": "https://www.shigamuseum.jp/events/15100/@2027-03-20",
+   "title": "企画展「佐川晃司 絵画、居場所のこと」関連ワークショップ「木炭ドローイング!」",
+   "kind": "event",
+   "museumId": "shiga",
+   "start": "2027-03-20",
+   "end": "2027-03-20",
+   "url": "https://www.shigamuseum.jp/events/15100/"
   },
   {
    "id": "https://www.minpaku.ac.jp/ai1ec_event/76289@2027-03-28",
